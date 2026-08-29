@@ -271,8 +271,6 @@ p {
 .work-card {
   display: block;
   width: 100%;
-  max-width: 640px;
-  align-self: center;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -375,6 +373,90 @@ p {
 
 .content-page a {
   color: var(--accent);
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin-top: 24px;
+}
+
+.content-page table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+}
+
+.content-page th,
+.content-page td {
+  text-align: left;
+  padding: 12px 20px 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.content-page th {
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.content-page td {
+  color: var(--text-secondary);
+}
+
+.content-page td:first-child {
+  white-space: nowrap;
+}
+
+.urgency-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.urgency-high {
+  color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.14);
+}
+
+.urgency-mid {
+  color: #f5b942;
+  background: rgba(245, 185, 66, 0.14);
+}
+
+.urgency-low {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.14);
+}
+
+.email-display {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 24px 0;
+  padding: 14px 28px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.email-display:hover {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 1px rgba(var(--accent-rgb), 0.15),
+    0 12px 28px -14px rgba(var(--accent-rgb), 0.4);
+  transform: translateY(-1px);
 }
 
 .placeholder-box {

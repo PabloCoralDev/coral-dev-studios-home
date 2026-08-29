@@ -16,6 +16,11 @@ export default function Level() {
           so improvement is visible, not just felt.
         </p>
 
+        <h2>Support</h2>
+        <ul>
+          <li><Link to="/level/support">Contact support</Link></li>
+        </ul>
+
         <h2>Legal</h2>
         <ul>
           <li><Link to="/level/privacy">Privacy Policy</Link></li>

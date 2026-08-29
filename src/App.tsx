@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Level from './pages/Level'
 import Privacy from './pages/Privacy'
+import Support from './pages/Support'
 import Terms from './pages/Terms'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Route path="/level" element={<Level />} />
       <Route path="/level/privacy" element={<Privacy />} />
       <Route path="/level/terms" element={<Terms />} />
+      <Route path="/level/support" element={<Support />} />
       {/* Level's paywall currently links to these top-level paths directly -
           redirect so those links keep working without needing an app rebuild */}
       <Route path="/privacy" element={<Navigate to="/level/privacy" replace />} />
