@@ -287,6 +287,10 @@ p {
   transform: translateY(-2px);
 }
 
+.work-card + .work-card {
+  margin-top: 16px;
+}
+
 .work-card h3 {
   font-size: 17px;
   color: var(--text);

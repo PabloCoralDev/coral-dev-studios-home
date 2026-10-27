@@ -59,6 +59,14 @@ export default function Landing() {
               </p>
               <span className="arrow">View project →</span>
             </Link>
+            <Link to="/testboard" className="work-card">
+              <h3>TestBoard</h3>
+              <p>
+                The beta program platform behind Level — tester signup, TestFlight access,
+                scheduled reports, and bug triage in one dashboard.
+              </p>
+              <span className="arrow">View project →</span>
+            </Link>
           </div>
         </section>
       </Reveal>
